@@ -68,6 +68,7 @@ function guessTheNumber() {
       score--;
       scr.innerHTML = score;
     } else if (playerGuess < 0 || playerGuess > 100) {
+      result.style.color = "rgb(224, 57, 57)";
       resultHTML("Enter the number between 0 and 99 only.⛔.");
     }
   } else {
